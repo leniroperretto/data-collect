@@ -81,8 +81,5 @@ df.to_csv("dados_resident_evil.csv", index=False, sep=";")
 # Exportando/Salvando a lista em arquivo em .parquet
 df.to_parquet("dados_resident_evil.parquet", index=False)
 
-# %%
-
-df_new = pd.read_parquet("dados_resident_evil.parquet")
-df_new
-
+# Exportando/Salvando a lista em arquivo em .pickle
+df.to_pickle("dados_resident_evil.pkl")
